@@ -38,6 +38,6 @@ public class SplashScreenActivity extends AppCompatActivity {
                 startActivity(new Intent(SplashScreenActivity.this, WalkthroughActivity.class));
                 finish();
             }
-        },1000);
+        },5000);
     }
 }

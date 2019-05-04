@@ -2,7 +2,7 @@ package com.idea.idc.myselfapps.model;
 
 public class FriendModel {
 
-    String teman, phone;
+    private String teman, phone;
 
     public FriendModel(String nama, String phone) {
         this.teman = nama;
