@@ -2,14 +2,233 @@
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/colorBackgroud">
 
-    <TextView
-        android:id="@+id/tv_home"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:text="@string/title_home"
-        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:background="@drawable/gradation">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Home"
+                    android:paddingLeft="30dp"
+                    android:layout_marginTop="15dp"
+                    android:textSize="20dp"
+                    android:textColor="@color/colorWhite"
+                    android:fontFamily="@font/nunito_bold"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="30dp"
+                    android:src="@drawable/ic_settings_black_24dp"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="70dp"
+                android:layout_marginBottom="70dp"
+                android:layout_marginHorizontal="20dp"
+                android:background="@drawable/rounded_colorwhite">
+
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/profile_image"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginBottom="10dp"
+                    android:src="@drawable/userphoto"
+                    app:civ_border_width="2dp"
+                    app:civ_border_color="@color/themeColor2"/>
+
+                <TextView
+                    android:id="@+id/txt_nama"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/profile_image"
+                    android:layout_marginTop="30dp"
+                    android:text="Imam Dwi Cahyo"
+                    android:textSize="20dp"
+                    android:textAlignment="center"
+                    android:fontFamily="@font/nunito_bold"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorBlack"/>
+
+                <TextView
+                    android:id="@+id/txt_nim"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txt_nama"
+                    android:layout_toRightOf="@id/profile_image"
+                    android:text="10116494"
+                    android:textColor="@color/colorBlack"
+                    android:textAlignment="center"
+                    android:textSize="18dp"
+                    android:fontFamily="@font/nunito_bold"/>
+
+                <TextView
+                    android:id="@+id/txt_kelas"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txt_nim"
+                    android:layout_toRightOf="@id/profile_image"
+                    android:text="AKB11 / IF11"
+                    android:textColor="@color/colorBlack"
+                    android:textAlignment="center"
+                    android:textSize="18dp"
+                    android:fontFamily="@font/nunito_bold"
+                    android:layout_marginBottom="30dp"/>
+
+                <TextView
+                    android:id="@+id/txt_deskripsiDiri"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/profile_image"
+                    android:layout_marginTop="50dp"
+                    android:paddingLeft="30dp"
+                    android:textAlignment="center"
+                    android:text="@string/home_deskripsiDiri"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="14dp"
+                    android:fontFamily="@font/rubik_regular"/>
+
+                <TextView
+                    android:id="@+id/txt_cita2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txt_deskripsiDiri"
+                    android:layout_marginTop="50dp"
+                    android:paddingLeft="30dp"
+                    android:text="Cita-cita  :      Orang yang berilmu"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="14dp"
+                    android:fontFamily="@font/rubik_regular"/>
+
+                <TextView
+                    android:id="@+id/txt_Makes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txt_cita2"
+                    android:layout_marginTop="5dp"
+                    android:paddingLeft="30dp"
+                    android:text="Makes       :       -"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="14dp"
+                    android:fontFamily="@font/rubik_regular"/>
+
+                <TextView
+                    android:id="@+id/txt_Mikes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txt_Makes"
+                    android:layout_marginTop="5dp"
+                    android:paddingLeft="30dp"
+                    android:text="Mikes        :       -"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="14dp"
+                    android:fontFamily="@font/rubik_regular"/>
+
+                <TextView
+                    android:id="@+id/txt_hobby"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txt_Mikes"
+                    android:layout_marginTop="30dp"
+                    android:paddingLeft="30dp"
+                    android:text="Hobby      :"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="18dp"
+                    android:fontFamily="@font/rubik_regular"/>
+
+                <LinearLayout
+                    android:id="@+id/hobby1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txt_hobby"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_below="@id/txt_hobby"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/icons8running80"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/txt_hobby"
+                        android:paddingLeft="50dp"
+                        android:text="Berlari"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="14dp"
+                        android:fontFamily="@font/rubik_regular"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/hobby2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="50dp"
+                    android:layout_below="@id/hobby1"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_below="@id/txt_hobby"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:src="@drawable/icons8snorkel64"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/txt_hobby"
+                        android:paddingLeft="50dp"
+                        android:text="Berenang"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="14dp"
+                        android:fontFamily="@font/rubik_regular"/>
+
+                </LinearLayout>
+
+
+
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
 
 </RelativeLayout>

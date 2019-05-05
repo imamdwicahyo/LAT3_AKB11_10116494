@@ -3,25 +3,102 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/colorBackgroud">
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <android.support.v7.widget.RecyclerView
-            android:id="@+id/recycler_viewFriend"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            />
+        <RelativeLayout
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="@drawable/gradation">
 
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Daily"
+                android:paddingLeft="30dp"
+                android:layout_marginTop="15dp"
+                android:textSize="19dp"
+                android:textColor="@color/colorWhite"
+                android:fontFamily="@font/nunito_bold"/>
 
-        <android.support.v7.widget.RecyclerView
-            android:id="@+id/recycler_viewDaily"
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="18dp"
+                android:layout_marginRight="30dp"
+                android:src="@drawable/icons8menuverticalfilled50"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/friend"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/recycler_viewFriend"
-            />
+            android:layout_marginTop="10dp"
+            android:layout_marginHorizontal="5dp"
+            android:layout_below="@+id/header"
+            android:background="@drawable/rounded_colorwhite2"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txt_teman"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="30dp"
+                android:layout_marginTop="5dp"
+                android:text="Daftar Teman"
+                android:textSize="20dp"
+                android:textColor="@color/themeColor"
+                android:fontFamily="@font/nunito_bold"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_viewFriend"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/daily"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginHorizontal="5dp"
+            android:layout_below="@+id/friend"
+            android:background="@drawable/rounded_colorwhite2"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txt_daily"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="30dp"
+                android:text="List Kegiatan"
+                android:textSize="20dp"
+                android:textColor="@color/themeColor"
+                android:fontFamily="@font/nunito_bold"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_viewDaily"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                />
+
+        </LinearLayout>
+
+
 
     </RelativeLayout>
 

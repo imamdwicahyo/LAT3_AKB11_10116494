@@ -31,7 +31,7 @@ public class FriendAdapter extends RecyclerView.Adapter<FriendAdapter.FriendView
     @Override
     public void onBindViewHolder(@NonNull FriendViewHoldder friendViewHoldder, int i) {
         friendViewHoldder.txt_teman.setText(dataList.get(i).getTeman());
-        friendViewHoldder.txt_phone.setText(dataList.get(i).getPhone());
+        //friendViewHoldder.txt_phone.setText(dataList.get(i).getPhone());
     }
 
     @Override
@@ -45,7 +45,7 @@ public class FriendAdapter extends RecyclerView.Adapter<FriendAdapter.FriendView
         public FriendViewHoldder(@NonNull View itemView) {
             super(itemView);
             txt_teman = itemView.findViewById(R.id.txt_teman);
-            txt_phone = itemView.findViewById(R.id.txt_phone);
+            //txt_phone = itemView.findViewById(R.id.txt_phone);
         }
     }
 }

@@ -11,26 +11,59 @@
         card_view:cardElevation="3dp"
         card_view:cardUseCompatPadding="true">
 
-        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        <RelativeLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
-            android:orientation="vertical"
-            android:padding="5dp">
+            android:padding="20dp">
 
-            <!-- TextView Nama Mahasiwa -->
-            <TextView
-                android:id="@+id/txt_nama"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
-
-            <!-- TextView Npm Mahasiswa -->
+            <!-- TextView Waktu Kegiatan -->
             <TextView
                 android:id="@+id/txt_waktu"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="00:00"
+                android:textSize="45dp"
+                android:fontFamily="@font/digital7"
+                android:textColor="@color/colorBlack"   />
 
-        </LinearLayout>
+            <!-- TextView Kegiatan -->
+            <TextView
+                android:id="@+id/txt_nama"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Imam Dwi Cahyo"
+                android:layout_toRightOf="@id/txt_waktu"
+                android:layout_marginLeft="20dp"
+                android:textSize="16dp"
+                android:fontFamily="@font/nunito_bold"
+                android:textColor="@color/colorBlack"/>
+
+            <TextView
+                android:id="@+id/txt_day"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Everyday"
+                android:layout_toRightOf="@id/img_clock"
+                android:layout_below="@id/txt_nama"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="2dp"
+                android:textSize="12dp"
+                android:fontFamily="@font/nunito_bold"
+                android:textColor="@color/colorBlack"/>
+
+            <ImageView
+                android:id="@+id/img_clock"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_toRightOf="@id/txt_waktu"
+                android:layout_below="@id/txt_nama"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="3dp"
+                android:src="@drawable/ic_access_time_black_24dp"/>
+
+        </RelativeLayout>
 
     </android.support.v7.widget.CardView>
 

@@ -14,7 +14,7 @@
             android:layout_width="wrap_content"
             android:layout_height="320dp"
             android:layout_marginTop="80dp"
-            android:src="@drawable/ilustration1" />
+            android:src="@drawable/ilustration5" />
 
         <TextView
             android:layout_width="match_parent"

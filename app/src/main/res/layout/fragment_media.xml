@@ -4,12 +4,31 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/tv_home"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:text="@string/title_music"
-        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@drawable/gradation">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Music &amp; Video"
+            android:paddingLeft="30dp"
+            android:layout_marginTop="15dp"
+            android:textSize="19dp"
+            android:textColor="@color/colorWhite"
+            android:fontFamily="@font/nunito_bold"/>
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="18dp"
+            android:layout_marginRight="30dp"
+            android:src="@drawable/icons8menuverticalfilled50"/>
+
+    </RelativeLayout>
 
 </RelativeLayout>
