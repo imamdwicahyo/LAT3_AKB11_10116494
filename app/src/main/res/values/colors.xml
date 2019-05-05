@@ -24,10 +24,10 @@
     <color name="dot_light_screen4">#7d5fff</color>
 
     <array name="array_dot_active">
-        <item>@color/dot_light_screen1</item>
-        <item>@color/dot_light_screen2</item>
-        <item>@color/dot_light_screen3</item>
-        <item>@color/dot_light_screen4</item>
+        <item>@color/themeColor</item>
+        <item>@color/themeColor</item>
+        <item>@color/themeColor</item>
+        <item>@color/themeColor</item>
     </array>
 
     <array name="array_dot_inactive">

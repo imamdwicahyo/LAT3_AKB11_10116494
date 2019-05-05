@@ -61,60 +61,33 @@ public class DailyFragment extends Fragment {
     void addDataDaily(){
         dailyModelArrayList = new ArrayList<>();
         dailyModelArrayList.add(new DailyModel("Bangun Tidur", "04:20"));
-        dailyModelArrayList.add(new DailyModel("Bangun Tidur", "04:20"));
-        dailyModelArrayList.add(new DailyModel("Bangun Tidur", "04:20"));
-        dailyModelArrayList.add(new DailyModel("Bangun Tidur", "04:20"));
-        dailyModelArrayList.add(new DailyModel("Bangun Tidur", "04:20"));
-        dailyModelArrayList.add(new DailyModel("Bangun Tidur", "04:20"));
-        dailyModelArrayList.add(new DailyModel("Bangun Tidur", "04:20"));
-        dailyModelArrayList.add(new DailyModel("Bangun Tidur", "04:20"));
-        dailyModelArrayList.add(new DailyModel("Bangun Tidur", "04:20"));
-        dailyModelArrayList.add(new DailyModel("Bangun Tidur", "04:20"));
-        dailyModelArrayList.add(new DailyModel("Bangun Tidur", "04:20"));
-        dailyModelArrayList.add(new DailyModel("Bangun Tidur", "04:20"));
-        dailyModelArrayList.add(new DailyModel("Bangun Tidur", "04:20"));
-        dailyModelArrayList.add(new DailyModel("Bangun Tidur", "04:20"));
-        dailyModelArrayList.add(new DailyModel("Bangun Tidur", "04:20"));
-        dailyModelArrayList.add(new DailyModel("Bangun Tidur", "04:20"));
-        dailyModelArrayList.add(new DailyModel("Bangun Tidur", "04:20"));
-        dailyModelArrayList.add(new DailyModel("Bangun Tidur", "04:20"));
-        dailyModelArrayList.add(new DailyModel("Bangun Tidur", "04:20"));
-        dailyModelArrayList.add(new DailyModel("Bangun Tidur", "04:20"));
-        dailyModelArrayList.add(new DailyModel("Bangun Tidur", "04:20"));
-        dailyModelArrayList.add(new DailyModel("Bangun Tidur", "04:20"));
-        dailyModelArrayList.add(new DailyModel("Bangun Tidur", "04:20"));
-        dailyModelArrayList.add(new DailyModel("Bangun Tidur", "04:20"));
-        dailyModelArrayList.add(new DailyModel("Bangun Tidur", "04:20"));
-        dailyModelArrayList.add(new DailyModel("Bangun Tidur", "04:20"));
-        dailyModelArrayList.add(new DailyModel("Bangun Tidur", "04:20"));
-        dailyModelArrayList.add(new DailyModel("Bangun Tidur", "04:20"));
-        dailyModelArrayList.add(new DailyModel("Bangun Tidur", "04:20"));
-        dailyModelArrayList.add(new DailyModel("Bangun Tidur", "04:20"));
-        dailyModelArrayList.add(new DailyModel("Bangun Tidur", "04:20"));
-        dailyModelArrayList.add(new DailyModel("Bangun Tidur", "04:20"));
-        dailyModelArrayList.add(new DailyModel("Bangun Tidur", "04:20"));
-        dailyModelArrayList.add(new DailyModel("Bangun Tidur", "04:20"));
-        dailyModelArrayList.add(new DailyModel("Bangun Tidur", "04:20"));
-        dailyModelArrayList.add(new DailyModel("Bangun Tidur", "04:20"));
-        dailyModelArrayList.add(new DailyModel("Bangun Tidur", "04:20"));
-        dailyModelArrayList.add(new DailyModel("Bangun Tidur", "04:20"));
-        dailyModelArrayList.add(new DailyModel("Bangun Tidur", "04:20"));
-        dailyModelArrayList.add(new DailyModel("Bangun Tidur", "04:20"));
-        dailyModelArrayList.add(new DailyModel("Bangun Tidur", "04:20"));
-        dailyModelArrayList.add(new DailyModel("Bangun Tidur", "04:20"));
-        dailyModelArrayList.add(new DailyModel("Bangun Tidur", "04:20"));
-        dailyModelArrayList.add(new DailyModel("Bangun Tidur", "04:20"));
-        dailyModelArrayList.add(new DailyModel("Bangun Tidur", "04:20"));
-        dailyModelArrayList.add(new DailyModel("Bangun Tidur", "04:20"));
-        dailyModelArrayList.add(new DailyModel("Bangun Tidur", "04:20"));
-        dailyModelArrayList.add(new DailyModel("Bangun Tidur", "04:20"));
-        dailyModelArrayList.add(new DailyModel("Bangun Tidur", "04:20"));
-        dailyModelArrayList.add(new DailyModel("Bangun Tidur", "04:20"));
-        dailyModelArrayList.add(new DailyModel("Bangun Tidur", "04:20"));
-        dailyModelArrayList.add(new DailyModel("Bangun Tidur", "04:20"));
-
-
-
+        dailyModelArrayList.add(new DailyModel("Wudlu", "04:25"));
+        dailyModelArrayList.add(new DailyModel("Sholat Subuh", "04:30"));
+        dailyModelArrayList.add(new DailyModel("Mandi", "05:00"));
+        dailyModelArrayList.add(new DailyModel("Makan", "05:15"));
+        dailyModelArrayList.add(new DailyModel("Persiapan Kuliah", "05:30"));
+        dailyModelArrayList.add(new DailyModel("Berangkat Kuliah", "06:00"));
+        dailyModelArrayList.add(new DailyModel("Sampai Kampus", "08:00"));
+        dailyModelArrayList.add(new DailyModel("Masuk Kelas", "09:15"));
+        dailyModelArrayList.add(new DailyModel("Keluar Kelas", "11:00"));
+        dailyModelArrayList.add(new DailyModel("Istirahat", "11:30"));
+        dailyModelArrayList.add(new DailyModel("Sholat Dzuhur", "12:00"));
+        dailyModelArrayList.add(new DailyModel("Istirahat", "12:15"));
+        dailyModelArrayList.add(new DailyModel("Masuk Kelas", "13.00"));
+        dailyModelArrayList.add(new DailyModel("Keluar Kelas", "15.15"));
+        dailyModelArrayList.add(new DailyModel("Sholat Ahsar", "15:20"));
+        dailyModelArrayList.add(new DailyModel("Persiapan Pulang", "15:30"));
+        dailyModelArrayList.add(new DailyModel("Pulang", "15:45"));
+        dailyModelArrayList.add(new DailyModel("Sampai Rumah", "17:45"));
+        dailyModelArrayList.add(new DailyModel("Istirahat", "17:50"));
+        dailyModelArrayList.add(new DailyModel("Sholat magrib", "18:00"));
+        dailyModelArrayList.add(new DailyModel("Makan Malam", "18:15"));
+        dailyModelArrayList.add(new DailyModel("Istirahat", "18:30"));
+        dailyModelArrayList.add(new DailyModel("Sholat Isya", "19:00"));
+        dailyModelArrayList.add(new DailyModel("Latihan", "19:20"));
+        dailyModelArrayList.add(new DailyModel("Tidur", "22:00"));
+        dailyModelArrayList.add(new DailyModel("Bangun Malam", "01:00"));
+        dailyModelArrayList.add(new DailyModel("Tidur Lagi", "02:00"));
     }
 
     void addDataFriend(){

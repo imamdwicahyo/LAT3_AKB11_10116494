@@ -34,10 +34,10 @@ public class WalkthroughActivity extends AppCompatActivity {
 
         // mengecek lauch activity - sebelum memanggil setContentView()
         prefManager = new PrefManager(this);
-//        if (!prefManager.isFirstTimeLaunch()) {
-//            launchHomeScreen();
-//            finish();
-//        }
+        if (!prefManager.isFirstTimeLaunch()) {
+            launchHomeScreen();
+            finish();
+        }
 
         // membuat transparan notifikasi
         if (Build.VERSION.SDK_INT >= 21) {
