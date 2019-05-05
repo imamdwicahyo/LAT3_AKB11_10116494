@@ -1,5 +1,7 @@
 package com.idea.idc.myselfapps;
 
+import android.app.Dialog;
+import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.design.widget.BottomNavigationView;
@@ -9,6 +11,8 @@ import android.support.annotation.NonNull;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.WindowManager;
+import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity implements BottomNavigationView.OnNavigationItemSelectedListener {
@@ -65,5 +69,32 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
             return true;
         }
         return false;
+    }
+
+    public void onClickMaps(View view) {
+        Intent intent = new Intent(MainActivity.this, MapsActivity.class);
+        startActivity(intent);
+    }
+
+    public void onClickVersion(View view) {
+        /**
+         * Initiate Custom Dialog
+         */
+        final Dialog dialog = new Dialog(MainActivity.this);
+        dialog.setContentView(R.layout.costum_dialog);
+        dialog.setTitle("MYSELP App");
+
+        Button dialogButton = (Button) dialog.findViewById(R.id.bt_ok);
+
+         //Jika tombol diklik, tutup dialog
+
+        dialogButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                dialog.dismiss();
+            }
+        });
+
+        dialog.show();
     }
 }
